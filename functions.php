@@ -21,7 +21,7 @@ function addCustomMenus_Goldies(){
 add_action('after_setup_theme', 'addCustomMenus_Goldies');
 
 function register_navwalker(){
-	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+    require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
 
@@ -30,3 +30,5 @@ if ( ! file_exists( get_template_directory() . '/class-wp-bootstrap-navwalker.ph
 } else {
     require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
+
+?>

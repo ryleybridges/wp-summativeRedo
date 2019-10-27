@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Goldie Milk Bar & Eatery</title>
-        <?php wp_head(); ?>
-    </head>
-    <body>
-        <div class="container">
-
+<?php get_header(); ?>
+        <div class="container main-block">
+            <h1 class="text-center">Goldie Milk Bar & Eatery</h1>
+            <div class="row">
+                <div class="col">
+                    <?php if(have_posts()): ?>
+                        <?php while(have_posts()): the_post(); ?>
+                            <?php the_content(); ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+            </div>
         </div>
-    </body>
-</html>
+<?php get_footer(); ?>
