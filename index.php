@@ -9,6 +9,9 @@
                                 <div class="card-body">
 
                                     <div class="row">
+                                        <div class="col-3">
+
+                                        </div>
                                         <?php if(has_post_thumbnail()): ?>
                                                 <div class="col-6 text-center mb-3"><?php the_post_thumbnail('large', ['class' => 'img-fluid']); ?></div>
                                         <?php endif; ?>
